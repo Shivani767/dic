@@ -1,21 +1,25 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter as Router } from "react-router-dom";
+import { Fragment } from "react";
+import { Routes, Route } from "react-router-dom";
+import AppHeader from "../layout/app-header";
+import Login from "../pages/login";
+import Hero from "../pages/hero-section";
+import PatientDetails from "../pages/patient-details";
+import Patient from "../pages/patient-view";
+import PatientList from "../pages/patient-list";
 
-const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
-  </React.StrictMode>
-);
+const Index = () => {
+  return (
+    <Fragment>
+      <AppHeader />
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/overview" element={<Hero />} />
+        <Route path="/patient-details" element={<PatientDetails />} />
+        <Route path="/patient" element={<Patient />} />
+        <Route path="/patient-list" element={<PatientList />} />
+      </Routes>
+    </Fragment>
+  );
+};
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+export default Index;
