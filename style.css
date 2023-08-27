@@ -1,31 +1,4 @@
-.patient-item__profile {
-  display: flex;
-  align-items: center;
-  margin: 2rem;
-}
-
-.patient-item__profile__img-box img {
-  height: auto;
-  width: 10rem;
-  border-radius: 50%;
-  margin-right: 2rem;
-}
-
-.patient-item__profile__content-box p {
-  width: 20rem;
-}
-
-.patient-item__profile__content-box__btn {
-  display: inline-block;
-  text-decoration: none;
-  background: var(--text-color-light);
-  border: 1px solid #87ceeb;
-  border-radius: 0.7rem;
-  font-family: var(--font-style-bold);
-  padding: 0.8rem 4rem;
-  color: #87ceeb;
-  transition: 0.25s;
-  font-size: 1.8rem;
-  cursor: pointer;
-  margin-top: 1rem;
+.btn-primary:hover,
+.btn-primary:focus {
+  box-shadow: inset 0 6rem 0 0 var(--color-secondary);
 }
