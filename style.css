@@ -1,13 +1,55 @@
-.section-hero {
+.login {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  height: 90vh;
 }
 
-.section-hero__img-box img {
+.login__img-box img {
+  height: auto;
+  width: 15rem;
   border-radius: 50%;
 }
 
-/* .section-hero__content-box p {
-  width: 50%;
-} */
+.login__content-box h1 {
+  text-align: center;
+}
+
+.login__content-box__form {
+  margin-top: 4rem;
+}
+
+.login__content-box__form div {
+  margin: 2rem 0;
+}
+
+.login__content-box__form div label {
+  font-family: var(--font-style-bold);
+  font-size: 1.6rem;
+}
+
+.login__content-box__form div label input,
+.login__content-box__form div label select {
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  width: 25rem;
+  margin-top: 0.5rem;
+}
+
+.login__content-box__form div label select {
+  background-color: #87ceeb;
+  border-radius: 50rem;
+}
+
+.login__content-box__form__btn {
+  display: inline-block;
+  text-decoration: none;
+  background: var(--text-color-dark);
+  border: none;
+  border-radius: 5rem;
+  font-family: var(--font-style-bold);
+  padding: 0.8rem 4rem;
+  color: var(--text-color-light);
+  transition: 0.25s;
+  font-size: 1.8rem;
+}
