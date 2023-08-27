@@ -1,29 +1,31 @@
-.header {
+.patient-item__profile {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  height: 10vh;
+  margin: 2rem;
 }
 
-.header__navigation ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.patient-item__profile__img-box img {
+  height: auto;
+  width: 10rem;
+  border-radius: 50%;
+  margin-right: 2rem;
 }
 
-.header__navigation ul li {
-  list-style: none;
-  font-size: 1.8rem;
-  font-family: var(--font-style-regular);
-  margin: 0 1rem;
+.patient-item__profile__content-box p {
+  width: 20rem;
 }
 
-.header__navigation ul li a {
+.patient-item__profile__content-box__btn {
+  display: inline-block;
   text-decoration: none;
-}
-
-.header__btn a {
+  background: var(--text-color-light);
+  border: 1px solid #87ceeb;
+  border-radius: 0.7rem;
   font-family: var(--font-style-bold);
-  text-decoration: none;
+  padding: 0.8rem 4rem;
+  color: #87ceeb;
+  transition: 0.25s;
   font-size: 1.8rem;
+  cursor: pointer;
+  margin-top: 1rem;
 }
