@@ -1,31 +1,51 @@
-.patient-item__profile {
+.section-patient-details {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  margin: 2rem;
+  height: 90vh;
 }
-
-.patient-item__profile__img-box img {
+.section-patient-details__img-box img {
+  width: 40%;
   height: auto;
-  width: 10rem;
-  border-radius: 50%;
-  margin-right: 2rem;
 }
 
-.patient-item__profile__content-box p {
-  width: 20rem;
+.section-patient-details__img-box img {
+  width: inherit;
+  height: inherit;
 }
 
-.patient-item__profile__content-box__btn {
-  display: inline-block;
-  text-decoration: none;
-  background: var(--text-color-light);
-  border: 1px solid #87ceeb;
-  border-radius: 0.7rem;
+.section-patient-details div {
+  margin: 2rem 0;
+}
+
+.section-patient-details div label {
   font-family: var(--font-style-bold);
-  padding: 0.8rem 4rem;
-  color: #87ceeb;
-  transition: 0.25s;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+}
+
+.section-patient-details div label input,
+.section-patient-details div label select {
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  width: 25rem;
+  margin-top: 0.5rem;
+}
+
+.section-patient-details div label select {
+  background-color: #87ceeb;
+  border-radius: 50rem;
+}
+
+#gltf {
+  font-family: var(--font-style-bold);
+  background-color: #87ceeb;
+  border: none;
   cursor: pointer;
-  margin-top: 1rem;
+}
+
+#report {
+  font-family: var(--font-style-bold);
+  background-color: #87ceeb;
+  border: none;
+  cursor: pointer;
 }
