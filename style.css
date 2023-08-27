@@ -1,51 +1,10 @@
-.section-patient-details {
+.patient-list__content {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  height: 90vh;
-}
-.section-patient-details__img-box img {
-  width: 40%;
-  height: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.section-patient-details__img-box img {
-  width: inherit;
-  height: inherit;
-}
-
-.section-patient-details div {
-  margin: 2rem 0;
-}
-
-.section-patient-details div label {
-  font-family: var(--font-style-bold);
-  font-size: 1.6rem;
-}
-
-.section-patient-details div label input,
-.section-patient-details div label select {
-  border-radius: 0.5rem;
-  padding: 0.3rem;
-  width: 25rem;
-  margin-top: 0.5rem;
-}
-
-.section-patient-details div label select {
-  background-color: #87ceeb;
-  border-radius: 50rem;
-}
-
-#gltf {
-  font-family: var(--font-style-bold);
-  background-color: #87ceeb;
-  border: none;
-  cursor: pointer;
-}
-
-#report {
-  font-family: var(--font-style-bold);
-  background-color: #87ceeb;
-  border: none;
-  cursor: pointer;
+.patient-list h1 {
+  margin-bottom: 2rem;
 }
