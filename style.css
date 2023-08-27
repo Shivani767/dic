@@ -1,55 +1,29 @@
-.login {
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  height: 90vh;
+  height: 10vh;
 }
 
-.login__img-box img {
-  height: auto;
-  width: 15rem;
-  border-radius: 50%;
+.header__navigation ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.login__content-box h1 {
-  text-align: center;
+.header__navigation ul li {
+  list-style: none;
+  font-size: 1.8rem;
+  font-family: var(--font-style-regular);
+  margin: 0 1rem;
 }
 
-.login__content-box__form {
-  margin-top: 4rem;
-}
-
-.login__content-box__form div {
-  margin: 2rem 0;
-}
-
-.login__content-box__form div label {
-  font-family: var(--font-style-bold);
-  font-size: 1.6rem;
-}
-
-.login__content-box__form div label input,
-.login__content-box__form div label select {
-  border-radius: 0.5rem;
-  padding: 0.3rem;
-  width: 25rem;
-  margin-top: 0.5rem;
-}
-
-.login__content-box__form div label select {
-  background-color: #87ceeb;
-  border-radius: 50rem;
-}
-
-.login__content-box__form__btn {
-  display: inline-block;
+.header__navigation ul li a {
   text-decoration: none;
-  background: var(--text-color-dark);
-  border: none;
-  border-radius: 5rem;
+}
+
+.header__btn a {
   font-family: var(--font-style-bold);
-  padding: 0.8rem 4rem;
-  color: var(--text-color-light);
-  transition: 0.25s;
+  text-decoration: none;
   font-size: 1.8rem;
 }
