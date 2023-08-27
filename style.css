@@ -1,0 +1,13 @@
+.section-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-hero__img-box img {
+  border-radius: 50%;
+}
+
+/* .section-hero__content-box p {
+  width: 50%;
+} */
